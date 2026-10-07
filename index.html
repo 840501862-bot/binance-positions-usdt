@@ -245,6 +245,22 @@
  * ================================================================ */
 
 const FILTER_SYMBOLS = {
+  "大宗商品": [
+    "XAUUSDT",
+    "CLUSDT",
+    "BZUSDT",
+    "XAGUSDT",
+    "NATGASUSDT",
+    "COPPERUSDT",
+    "XPTUSDT",
+    "XPDUSDT",
+    "USDBRLUSDT",
+    "SNDKUSDT",
+    "SPCXUSDT",
+    "SKHYNIXUSDT",
+    "MUUSDT",
+    "NVDAUSDT"
+  ],
   "虚拟币": [
     "0GUSDT",
     "1000000MOGUSDT",
@@ -986,7 +1002,7 @@ const FILTER_SYMBOLS = {
     "ZSUSDT"
   ]
 };
-const FILTER_CATEGORIES = ["全部", "虚拟币", "美股"];
+const FILTER_CATEGORIES = ["大宗商品", "全部", "虚拟币", "美股"];
 
 const LS_KEY = "binance_positions_config_v1";
 const DEFAULT_ACCOUNTS = [
@@ -1008,7 +1024,7 @@ const state = {
   results: null,       // 过滤后的持仓（用于显示/导出）
   rawResults: null,    // 未过滤（切换筛选时重筛）
   errors: {},
-  filter: "虚拟币",
+  filter: "大宗商品",
   fetching: false,
   autoOpen: true,
 };
